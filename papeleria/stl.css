@@ -1,0 +1,97 @@
+body {
+    text-align: center;
+	font-family: Arial, sans-serif;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+}
+
+form{
+	max-width: 600px;
+	margin: 20px auto;
+	background-color: rgba(225, 225, 225, 0.8);
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow:0 0 10px rgba(0 , 0, 0, 0.1);
+}
+
+h1{
+	text-align: center;
+	
+}
+
+label{
+	display: block;
+	margin-bottom: 5px;
+	color: #666666;
+}
+
+input{
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type="submit"]{
+	background-color:#FFCCCC;
+	color: #FFFFFF;
+	padding: 8px 10px;
+	border: none;
+	border-radius: 100px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.slider-box{
+    width: 780px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+@media (max-width:991px) {
+    body{
+        padding: 30px;
+    }
+
+    .slider-box{
+        width: 100%;
+    }
+}
